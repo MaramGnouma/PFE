@@ -1,0 +1,28 @@
+<app-menu></app-menu>
+<app-header></app-header>
+<div class="content-body">
+  <div class="container-fluid" style="margin-top: 50px;">
+    <div class="row">
+      <div class="card" *ngFor="let inter of intervenants">
+        <div class="face front">
+            <img  src="./../../../../assets/imagessoldats/{{inter.image}}" alt="">
+            <h3>{{inter.nom}}</h3>
+        </div>
+        <div class="face back">
+            <h3>{{inter.nom}}</h3>
+            <strong>Soldat</strong>
+            <p> <strong>Date de naissance: {{inter.dateNaissance |date}} </strong></p>
+            <p><strong>Numéro d'identification militaire:</strong> {{inter.numeroIdentificationMilitaire}}</p>
+            <div class="link">
+              <a [routerLink]="'/detailssoldat/' + inter._id" class="btn btn-primary" style="color: #e4e7eb; background-color: #318CE7;border: #318CE7;margin-bottom: 10px;margin-top: 5px;"> <i class="fas fa-eye"></i></a>
+            </div>
+        </div>
+    </div>
+
+      </div>
+  </div>
+    </div>
+
+
+
+

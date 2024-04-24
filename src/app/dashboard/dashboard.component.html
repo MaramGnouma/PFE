@@ -1,0 +1,157 @@
+<app-header></app-header>
+<div class="content-body">
+
+  <div class="container-fluid" style="margin-top: 50px;">
+    <!-- Add Project -->
+    <div class="row">
+        <div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
+          <div class="card card-bd">
+            <div class="bg-secondary card-border" style="background:#3444d5 !important;"></div>
+            <div class="card-body box-style">
+              <div class="media align-items-center">
+                <div class="media-body me-3">
+                  <h2 class="count num-text text-black font-w700">2000</h2>
+                  <span class="fs-14">Nombre Equipement</span>
+                </div>
+               <img src="../../../../assets/casque.png" width="36" height="30"/>
+               <img src="../../../../assets/militaire (2).png" width="36" height="30"/>
+
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
+            <div class="card card-bd">
+            <div class="bg-primary card-border"></div>
+              <div class="card-body box-style">
+                <div class="media align-items-center">
+                  <div class="media-body me-3">
+                    <h2 class="count num-text text-black font-w700">5000</h2>
+                    <span class="fs-14">Nombre Missions</span>
+                  </div>
+                  <img src="../../../../assets/mission.png" width="60" height="60"/>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
+            <div class="card card-bd">
+            <div class="bg-warning card-border"></div>
+              <div class="card-body box-style">
+                <div class="media align-items-center">
+                  <div class="media-body me-3">
+                    <h2 class="count num-text text-black font-w700">6000</h2>
+                    <span class="fs-14">Nombre Soldats</span>
+                  </div>
+                  <img src="../../../../assets/militaire (1).png" width="50" height="50"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
+        <div class="card card-bd">
+          <div class="bg-info card-border"></div>
+          <div class="card-body box-style">
+            <div class="media align-items-center">
+              <div class="media-body me-3">
+                <h2 class="count num-text text-black font-w700">5000</h2>
+                <span class="fs-14">Nombre Controleurs</span>
+              </div>
+              <img src="../../../../assets/militaire (3).png" width="50" height="50"/>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-xl-3 col-xxl-6 col-sm-6">
+        <div class="card">
+          <div class="card-header border-0 pb-0">
+            <h4 class="fs-20 mb-0 text-black">Taux de réussite des missions terminées (succès/échec)</h4>
+            <div class="dropdown">
+              <a href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body text-center pb-0 px-2 pt-2">
+            <div id="widgetChart1" class="widgetChart1 dashboard-chart"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-xxl-6 col-sm-6">
+        <div class="card"  style="padding-top: 30px;">
+          <div class="card-header border-0 pb-0">
+            <h4 class="fs-20 mb-0 text-black">Répartition des missions (en cours / annulée / terminée)</h4>
+            <div >
+              <a >
+                <svg width="200" height="200">
+                  <!-- Première partie (25%) -->
+                  <path d="M100,100 L100,20 A80,80 0 0,1 180,100 Z" fill="#e64e14" />
+                  <!-- Deuxième partie (25%) -->
+                  <path d="M100,100 L180,100 A80,80 0 0,1 100,180 Z" fill="#e64e14" />
+                  <!-- Troisième partie (25%) -->
+                  <path d="M100,100 L100,180 A80,80 0 0,1 20,100 Z" fill="#cc4c02" />
+                  <!-- Quatrième partie (25%) -->
+                  <path d="M100,100 L20,100 A80,80 0 0,1 100,20 Z" fill="#ffa500" />
+              </svg>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left">
+                <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-xxl-12">
+        <div class="row">
+          <div class="card"  style="padding-top: 30px;">
+            <div class="card-header border-0 pb-0">
+              <h4 class="fs-20 mb-0 text-black">Répartition des missions par type</h4>
+              <div >
+                <a >
+                  <svg width="200" height="200">
+                    <!-- Première partie (25%) -->
+                    <path d="M100,100 L100,20 A80,80 0 0,1 180,100 Z" fill="#e64e14" />
+                    <!-- Deuxième partie (25%) -->
+                    <path d="M100,100 L180,100 A80,80 0 0,1 100,180 Z" fill="#e64e14" />
+                    <!-- Troisième partie (25%) -->
+                    <path d="M100,100 L100,180 A80,80 0 0,1 20,100 Z" fill="#cc4c02" />
+                    <!-- Quatrième partie (25%) -->
+                    <path d="M100,100 L20,100 A80,80 0 0,1 100,20 Z" fill="#ffa500" />
+                </svg>
+                </a>
+                <div class="dropdown-menu dropdown-menu-left">
+                  <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                  <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                </div>
+              </div>
+            </div>
+
+
+
+</div>
+</div>
+</div>
+    </div>
+    </div>
+    </div>
+
